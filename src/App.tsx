@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import "./app.css";
+import "./app.scss";
 
 // Component based architecture
 

@@ -50,16 +50,16 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
 
-.card > img:first-child {
-    width: calc(100% + 1rem);
-    margin: -0.5rem -0.5rem 0 -0.5rem;
-    aspect-ratio: 1;
-}
+    img:first-child {
+        width: calc(100% + 1rem);
+        margin: -0.5rem -0.5rem 0 -0.5rem;
+        aspect-ratio: 1;
+    }
 
-.card > button.primary {
-    align-self: flex-end;
+    button.primary {
+        align-self: flex-end;
+    }
 }
 
 button.primary {
