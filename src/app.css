@@ -1,0 +1,36 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-size: calc(1rem + 0.5vw);
+}
+
+body {
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+#root, main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul, ol, menu {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
