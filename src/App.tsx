@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 import "./app.scss";
+import { Product } from "./components/Product";
 
 // Component based architecture
 
@@ -48,22 +49,6 @@ function Gallery() {
       <Product pictureUrl="https://picsum.photos/id/11/1000" price={60} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio iste sapiente? Sed, similique vero, quae quas temporibus, dolores cupiditate sint placeat nesciunt modi assumenda ab voluptatum ipsam nihil inventore!" />
       <Product pictureUrl="https://picsum.photos/id/12/1000" price={60} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio iste sapiente? Sed, similique vero, quae quas temporibus, dolores cupiditate sint placeat nesciunt modi assumenda ab voluptatum ipsam nihil inventore!" />
     </ul>
-  );
-}
-
-type ProductProps = {
-  pictureUrl: string;
-  price: number;
-  description: string;
-};
-function Product({ pictureUrl, price, description }: ProductProps) {
-  return (
-    <li className="card">
-      <img src={pictureUrl} alt="" />
-      <span>{price}₪</span>
-      <p>{description}</p>
-      <button className="primary">Add to card</button>
-    </li>
   );
 }
 
